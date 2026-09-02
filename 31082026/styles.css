@@ -42,3 +42,8 @@ nav a{
     color: azure;
     padding: 5 px 10 px;
 }
+
+nav a:hover {
+    background-color: brown;
+    border-radius: 5px;
+}
