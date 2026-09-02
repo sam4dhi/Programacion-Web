@@ -28,3 +28,17 @@ nav{
     padding: 10px 15px;
     border-radius: 15px;
 }
+
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: azure;
+    padding: 5 px 10 px;
+}
