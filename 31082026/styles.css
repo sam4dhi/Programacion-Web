@@ -2,8 +2,22 @@
     box-sizing: border-box;
 }
 body{
-    margin: 10px;
+    margin: 0px;
     padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: blanchedalmond;
+    background-color:antiquewhite;
+}
+/*contenedor principal*/
+.container{
+    width: 100%;
+}
+
+/*Encbezado*/
+header{
+    background-color: azure;
+    color: brown;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
 }
