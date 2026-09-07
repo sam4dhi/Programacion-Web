@@ -79,3 +79,33 @@ section p{
     text-align: justify;
     padding-right: 5px;
 }
+
+/*fotter dek main*/
+.mainfooter{
+    background-color: indigo;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: azure;
+}
+
+aside{
+    background-color:burlywood;
+    border-radius: 15px;
+    padding: 20px;
+}
+aside section{
+    background-color:azure;
+    margin-bottom: 20px;
+}
+
+.page-footer{
+    margin-top: 20px;
+    background-color: darksalmon;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+}
