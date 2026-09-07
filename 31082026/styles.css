@@ -60,3 +60,17 @@ main{
     padding: 20px;
     border-radius: 15px;
 }
+
+/*Articulos*/
+article{
+    background:gold;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+section{
+    background:goldenrod;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
