@@ -18,8 +18,36 @@ header .logo h1{
     margin: 0px;
     padding-left: 25px;
 }
+
 nav ul{
     list-style-type: none;
     margin: 0px;
     padding-right: 25px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+section{
+    padding: 20px;
+    color: darkslateblue;
+    box-shadow: 0 2px 5px darkslateblue;
+    border-radius: 25px;
+    margin: 25px;
+}
+
+h2{
+    color: indigo;
+}
+
+footer{
+    background-color: slateblue;
+    color: aliceblue;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    position: flex;
+    border-radius: 15px;
 }
