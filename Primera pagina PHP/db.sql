@@ -1,7 +1,12 @@
+-- IP: 127.0.0.1
+-- PUERTO 3306
+-- USER: root
+-- PASS : 1234
+
 -- Crear base de datos
 CREATE DATABASE crud_app;
 
---Sleeccionar la base de datos
+-- Seleccionar la base de datos
 USE crud_app;
 
 CREATE TABLE usuarios(
@@ -10,4 +15,3 @@ CREATE TABLE usuarios(
     email VARCHAR(100) NOT NULL,
     telefono VARCHAR(15) NOT NULL
 );
-
