@@ -1,27 +1,41 @@
+<?php
+include('db.php');
+
+$sql="SELECT * FROM usuarios";
+
+$resultado = $coon->query($sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>Listar</title>
 </head>
-
 <body>
-<h1>Agregar Usuario</h1>
-<form action="./controlador/insertar.php" method="post">
-<label for="nombre">Nombre:</label>
-<input type="text" name="nombre" maxlength="150" placeholder="Samadhi Orozco Pastor" required >
-<br> <br>
-<label for="email">Email:</label>
-<input type="email" name="email" maxlength="150" placeholder="usuario@email.com" required>
-<br><br>
-<label for="tefono">Telefono</label>
-<input type="number" name="telefono" maxlength="15" placeholder="55 1234 5678" required>
-<br><br>
-<button type="submit">Registrar</button>
+<h1>Listar</h1>
+<table border="1" >
+<tr>
+<th>ID</th>
+<th>Nombre</th>
+<th>Email</th>
+<th>Telefono</th>
+<th>Acciones</th>
+</tr>
+<tr>
+<?php while($row =$resultado->fetch_assoc()){?>
+<td><?php echo $row['id'];?></td>
+<td><?php echo $row['nombre'];?></td>
+<td><?php echo $row['email'];?></td>
+<td><?php echo $row['telefono'];?></td>
+<td>
+<a href="edit.php?id=<?php echo $row['id']; ?>">Editar</a>
+<a href="delete.php?id=<?php echo $row['id']; ?>">Eliminar</a>
+</td>
+</tr>
 
-
-</form>
-
+<?php } ?>
+</table>
 </body>
 </html>
