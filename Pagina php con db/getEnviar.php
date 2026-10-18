@@ -12,7 +12,7 @@ include('db.php');
         $sql = "INSERT INTO usuarios(nombre, email, telefono) VALUES('$nombre', '$correo', '$telefono')";
 
         //Enviarla
-        if($conexion->query($sql) === TRUE){
+        if($coon->query($sql) === TRUE){
             header('Location: create.php');
             exit();
         }else{
