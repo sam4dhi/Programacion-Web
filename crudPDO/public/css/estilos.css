@@ -1,0 +1,29 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    border: 1px solid rgb(145, 168, 143);
+
+}
+
+th{
+    background-color: ghostwhite;
+}
+
+a{
+    margin-right: 8px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 8 px 12 px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
