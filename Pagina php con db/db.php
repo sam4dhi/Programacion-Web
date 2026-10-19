@@ -8,6 +8,6 @@ $coon = new mysqli($host,$user,$pass,$db,$port);
 if($coon -> connect_error){
     die('Error en conexion DB'.$coon -> connect_error);
 }else{
-    echo "Genial tenemos conexion";
+    echo "Tenemos conexion";
 }
 ?>

@@ -1,4 +1,4 @@
-<?php
+ <?php
 include('db.php');
     if($_SERVER['REQUEST_METHOD']=== 'GET'){
         //nombre
@@ -13,7 +13,7 @@ include('db.php');
 
         //Enviarla
         if($coon->query($sql) === TRUE){
-            header('Location: create.php');
+            header('Location: index.php');
             exit();
         }else{
             echo "todo mal tonoto";
